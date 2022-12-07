@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhập vào một số, in ra là số chẵn/lẻ
+        //3 hàm javascript cơ bản: alert, prompt, confirm
+        //B1. Nhập giá trị
+        let num = prompt("Nhập vào một số");
+        //B2. Kiểm tra có phải số chẵn/lẻ
+        let checkEvent = num%2==0;
+        //B3. In ra là số chẵn
+        if(checkEvent){            
+            console.log("Đây là số chẵn");
+        }else{
+            console.log("Đây là số lẻ");
+        }
+
+        //In ra các số dư trong phép chia 3
+        if (num%3==0) {
+            console.log("Chia hết cho 3");
+        }else if(num%3==1){
+            console.log("Chia 3 dư 1");
+        }else{
+            console.log("Chia 3 dư 2");
+        }
+        
+    </script>
+</body>
+</html>

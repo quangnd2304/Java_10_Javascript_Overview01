@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, Javascript</title>
+</head>
+
+<body>
+    <pre>HTML - Ngôn ngữ đánh dấu siêu văn bản</pre>
+    <pre>CSS - Ngôn ngữ định kiểu</pre>
+    <pre>Javascript - Ngôn ngữ lập trình</pre>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <p><span id="ra">Rikkei Academy</span> - <b id="content">Học viện đào tạo CNTT chất lượng Nhật Bản</b></p>
+    <script>
+        let ra = document.getElementById('ra');
+        ra.addEventListener('click', function () {
+            let content = document.getElementById('content');
+            content.innerText = "Chào mừng các bạn lớp Java-10";
+        });
+    </script>
+</body>
+
+</html>

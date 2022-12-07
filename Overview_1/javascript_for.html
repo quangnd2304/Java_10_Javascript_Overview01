@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Demo</title>
+</head>
+<body>
+    <script>
+        //break, continue
+        //break: thoát khỏi vòng lặp
+        //continue: Dừng vòng lặp hiện tại và nhảy sang vòng lặp tiếp theo
+        // Bạn Đức muốn khen Thu xinh đẹp 5 lần
+        for (let index = 0; index < 5; index++) {
+            if (index==2) {
+                continue;
+            }
+            console.log("Thu xinh đẹp quá Thu ơi - lần thứ ",index+1);            
+        }        
+        // In ra giá trị trung bình trong khoảng 0-10
+        let i = 0;
+        for (let j=10; i < j; i++,j--) {            
+            console.log(i,j);
+        }
+        console.log("Giá trị trung bình trong khoảng 0-10 là: ",i);
+    </script>
+</body>
+</html>

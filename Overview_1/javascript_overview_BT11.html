@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //B1. Nhập dữ liệu chỉ số mới và chỉ số cũ
+        let oldNumber = parseInt(prompt("Nhập vào chỉ số điện cũ"));
+        let newNumber = parseInt(prompt("Nhập vào chỉ số mới"));
+        //B2. Khai báo hằng số là số tiền thuê bao
+        let SUBSCRIBLE = 10000;
+        //B3. Tính số điện tiêu thụ trong tháng
+        let electricNumber = newNumber - oldNumber;
+        //B4. Tính tiền điện tiêu thụ trong tháng
+        let totalAmount;
+        if (electricNumber <= 50) {
+            totalAmount = SUBSCRIBLE + electricNumber * 700;
+        } else if (electricNumber <= 100) {
+            totalAmount = SUBSCRIBLE + 50 * 700 + (electricNumber - 50) * 900;
+        } else if (electricNumber <= 150) {
+            totalAmount = SUBSCRIBLE + 50 * 700 + 50 * 900 + (electricNumber - 100) * 1100;
+        } else {
+            totalAmount = SUBSCRIBLE + 50 * 700 + 50 * 900 + 50 * 1100 + (electricNumber - 150) * 1300;
+        }
+        //B5. In số tiền điện tiêu thụ trong tháng
+        console.log("Số tiền điện tiêu thụ trong tháng: ",totalAmount);
+    </script>
+</body>
+
+</html>
